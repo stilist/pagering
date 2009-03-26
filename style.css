@@ -1,0 +1,86 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background-color: #666;
+ font: 10pt Verdana, Arial, sans-serif;
+ margin: 0 auto;
+ padding: 0 5mm;
+ width: 236mm;
+}
+
+p {
+ margin: 1em 0;
+ line-height: 1.4em;
+}
+
+#nameplate {
+ height: 25mm;
+ padding-left: 25mm;
+}
+#nameplate a {
+ background-color: rgba(0, 0, 0, .7);
+ color: #ccc;
+ font: 2em "LubalGraph Bk BT", serif;
+ padding: 1mm;
+ text-decoration: none;
+}
+
+#content {
+ background: #ccc;
+ padding: 25mm 26mm 26mm 26mm;
+ position: relative;
+}
+#content p:first-child {
+ margin-top: 0;
+}
+
+/* default to not showing navigation, in case JS is off */
+#content #pagecount, #content .pagenav { display: none; }
+#content.pageringd #pagecount, #content.pageringd .pagenav { display: block; }
+
+#content.pageringd #text {
+ height: 114mm;
+ overflow: hidden;
+ column-gap: 28mm;
+ column-width: 76mm;
+ -moz-column-gap: 28mm;
+ -moz-column-width: 76mm;
+ -webkit-column-gap: 28mm;
+ -webkit-column-width: 76mm;
+}
+#content.pageringd #texttitle {
+ font: 4mm "LubalGraph Bk BT", serif;
+ position: absolute;
+ text-align: center;
+ top: 15mm;
+ width: 184mm;
+}
+
+#content.pageringd #pagecount {
+ bottom: 2em;
+ color: #999;
+ position: absolute;
+ text-align: center;
+ width: 184mm;
+}
+
+#content.pageringd .pagenav {
+ font-size: 2em;
+ position: absolute;
+ bottom: 2em;
+ width: 184mm;
+}
+#content.pageringd .pagenav span {
+ color: #999;
+ cursor: pointer;
+ position: absolute;
+}
+#content.pageringd .pagenav .pageleft {
+ left: -5mm;
+}
+#content.pageringd .pagenav .pageright {
+ right: -5mm;
+}
