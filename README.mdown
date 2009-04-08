@@ -5,11 +5,11 @@ A simple JavaScript carousel for text.
 ## How it works
 
 The code requires two elements: one that directly holds text, and a wrapper
-around it that also holds the paging navigation. The element with text is
-given <abbr class='smallcaps'>CSS</abbr>3 columns, cut to a specified height,
-and the resultant overflowing text hidden. Because this conveniently goes out
-the right side, we can make ‘pages’ by simply changing the text element’s
-left margin, moving the extra columns in and out of sight.
+around it. The element with text is given <abbr class='smallcaps'>CSS</abbr>3
+columns, cut to a specified height, and the resultant overflowing text hidden.
+Because this conveniently goes out the right side, we can make ‘pages’ by
+simply changing the text element’s left margin, moving the extra columns in and
+out of sight.
 
 ## How to use
 
@@ -18,17 +18,11 @@ properties for `#text` and `#content`.
 
 Currently, this is fairly dependent on the example
 <abbr class='smallcaps'>HTML</abbr> and <abbr class='smallcaps'>CSS</abbr>.
-It *should* be fine any adjustments to `#content` and `#type`, but I haven’t
-tested to see.
 
 ## Notes
 
 * I have tested this using WebKit and Minefield (the development versions of
 Safari and Firefox). It probably won’t work anywhere else.
-
-* The pages don’t change quite right — the second page is halfway out the left
-side, for example. I suspect this is something to do with the `column-gap`, but
-I haven’t really investigated yet.
 
 * It would be helpful to abstract the code so one can simply pass in the `id`
 of the element one desires to page.
