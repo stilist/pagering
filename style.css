@@ -67,20 +67,20 @@ p {
  width: 184mm;
 }
 
-#content.pageringd .pagenav {
+#content.pageringd #pagenav {
  font-size: 2em;
  position: absolute;
  bottom: 2em;
  width: 184mm;
 }
-#content.pageringd .pagenav span {
+#content.pageringd #pagenav div {
  color: #999;
  cursor: pointer;
  position: absolute;
 }
-#content.pageringd .pagenav .pageleft {
+#content.pageringd #pagenav #pageleft {
  left: -5mm;
 }
-#content.pageringd .pagenav .pageright {
+#content.pageringd #pagenav #pageright {
  right: -5mm;
 }
