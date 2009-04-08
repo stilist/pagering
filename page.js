@@ -25,11 +25,6 @@ var dom = {
   }
 }
 
-function debug(message) {
- debug = dom.$('debug');
- debug.innerHTML += message + '<br>';
-}
-
 var pagering = {
  // create paging nav
  // XXX: should move the current onload code in here
