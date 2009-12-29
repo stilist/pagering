@@ -70,13 +70,12 @@ var pagering = {
   getColumnGap: function(element) {
     var columnGap = '';
 
-    /* surely there's a way to compress this */
-    if (dom.getCSSValue(element, 'column-gap') !== null) {
-      columnGap = dom.getCSSValue(element, 'column-gap');
-    } else if (dom.getCSSValue(element, '-webkit-column-gap') !== null) {
-      columnGap = dom.getCSSValue(element, '-webkit-column-gap');
-    } else if (dom.getCSSValue(element, '-moz-column-gap') !== null) {
-      columnGap = dom.getCSSValue(element, '-moz-column-gap');
+    cssNames = ['column-gap', '-webkit-column-gap', '-moz-column-gap'];
+    for (var i = 0; i < cssNames.length; i++) {
+      if (dom.getCSSValue(element, cssNames[i]) !== null) {
+        columnGap = dom.getCSSValue(element, cssNames[i]);
+        break;
+      }
     }
 
     // CSS3 spec suggests 1em as the default column gap; use 13px as an average
