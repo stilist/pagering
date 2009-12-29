@@ -41,9 +41,9 @@ p {
 #content #pagecount, #content .pagenav { display: none; }
 #content.pageringd #pagecount, #content.pageringd .pagenav { display: block; }
 
+#content.pageringd { overflow: hidden; }
 #content.pageringd #text {
  height: 114mm;
- overflow: hidden;
  column-gap: 28mm;
  column-width: 76mm;
  -moz-column-gap: 28mm;
