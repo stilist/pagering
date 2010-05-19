@@ -13,19 +13,22 @@ out of sight.
 
 ## How to use
 
-Edit the stuff in `#text`, and/or edit the <abbr class='smallcaps'>CSS</abbr>
-properties for `#text` and `#content`.
+In your page `<head>`: `<script src='jquery.pagering.js'></script>`
 
-Currently, this is fairly dependent on the example
-<abbr class='smallcaps'>HTML</abbr> and <abbr class='smallcaps'>CSS</abbr>.
+To invoke: `jQuery("#text-wrapper").pagering();`.
+
+## Options
+
+* `columnGap`: <abbr class='smallcaps'>CSS</abbr>3 `column-gap`. Defaults to
+  20 `px`.
+* `columnWidth`: <abbr class='smallcaps'>CSS</abbr>3 `column-width`. Defaults
+  to 300 `px`.
+* `contentClass`: class for element that holds text; `column` rules apply
+  to this. Defaults to `entry-content` for use with [hAtom][hatom].
+
+  [hatom]: http://microformats.org/wiki/hatom "Documentation for hAtom"
 
 ## Notes
 
-* I have tested this using WebKit and Minefield (the development versions of
-Safari and Firefox). It probably won’t work anywhere else.
-
-* It would be helpful to abstract the code so one can simply pass in the `id`
-of the element one desires to page.
-
-* It would also be helpful to make the current-page indicator into a
-hover-to-edit input box.
+Works in Safari 4, WebKit nightlies, Chrome 5; broken in Firefox 3.6. Other
+browsers unknown.
