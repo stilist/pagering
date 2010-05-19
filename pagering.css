@@ -1,0 +1,42 @@
+.pageringed {
+ overflow: hidden;
+ position: relative;
+}
+.pageringed .pageringedChapter {
+ height: 114mm;
+ position: relative;
+}
+.pageringed .pageCount {
+ bottom: 2.5em;
+ color: #999;
+ position: absolute;
+ text-align: center;
+ width: 100%;
+}
+.pageringed .pageNav {
+ font-size: 2em;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+.pageringed .pageNav .changePage {
+ bottom: 1em;
+ color: #666;
+ cursor: pointer;
+ display: block;
+ position: absolute;
+}
+.pageringed .pageNav .changePage:hover {
+ color: #333;
+}
+.pageringed .pageNav .changePage.disabled,
+.pageringed .pageNav .changePage.disabled:hover {
+ color: #999;
+ cursor: default;
+}
+.pageringed .pageNav .pageLeft {
+ left: 0;
+}
+.pageringed .pageNav .pageRight {
+ right: 0;
+}

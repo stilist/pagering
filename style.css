@@ -30,57 +30,17 @@ p {
 
 #content {
  background: #ccc;
- padding: 25mm 26mm 26mm 26mm;
  position: relative;
 }
 #content p:first-child {
  margin-top: 0;
 }
-
-/* default to not showing navigation, in case JS is off */
-#content #pagecount, #content .pagenav { display: none; }
-#content.pageringd #pagecount, #content.pageringd .pagenav { display: block; }
-
-#content.pageringd { overflow: hidden; }
-#content.pageringd #text {
- height: 114mm;
- column-gap: 28mm;
- column-width: 76mm;
- -moz-column-gap: 28mm;
- -moz-column-width: 76mm;
- -webkit-column-gap: 28mm;
- -webkit-column-width: 76mm;
+.hentry {
+ margin: 0 26mm;
+ padding: 25mm 0 26mm 0;
 }
-#content.pageringd #texttitle {
- font: 4mm "LubalGraph Bk BT", serif;
- position: absolute;
- text-align: center;
- top: 15mm;
+.entry-title {
+ font: 5mm "LubalGraph Bk BT", serif;
+ margin-bottom: 1em;
  width: 184mm;
-}
-
-#content.pageringd #pagecount {
- bottom: 2em;
- color: #999;
- position: absolute;
- text-align: center;
- width: 184mm;
-}
-
-#content.pageringd #pagenav {
- font-size: 2em;
- position: absolute;
- bottom: 2em;
- width: 184mm;
-}
-#content.pageringd #pagenav div {
- color: #999;
- cursor: pointer;
- position: absolute;
-}
-#content.pageringd #pagenav #pageleft {
- left: -5mm;
-}
-#content.pageringd #pagenav #pageright {
- right: -5mm;
 }
