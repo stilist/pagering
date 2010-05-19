@@ -4,9 +4,9 @@
 	$.fn.pagering = function (options) {
 		var settings = {};
 		var defaults = {
-			chapterClass: "entry-content",
 			columnGap: 20,
-			columnWidth: 300
+			columnWidth: 300,
+			contentClass: "entry-content"
 		};
 		if (options) {
 			settings = $.extend(defaults, options);
@@ -88,7 +88,7 @@
 					var $totalPages = $dummyTotalPages.clone();
 
 					var $pagering = $(this);
-					var $pageringContent = $pagering.find("." + settings.chapterClass);
+					var $pageringContent = $pagering.find("." + settings.contentClass);
 					var unpagedHeight = $pageringContent.height();
 					$pageringContent.addClass("pageringedChapter");
 					var pagedHeight = $pageringContent.height();
